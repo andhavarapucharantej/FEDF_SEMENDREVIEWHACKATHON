@@ -1,0 +1,131 @@
+.location-picker {
+  flex: 1 1 280px;
+  min-width: 290px;
+  max-width: none;
+  align-items: center;
+}
+
+.location-picker-copy {
+  flex: 1;
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.location-picker-copy label {
+  display: grid;
+  gap: 2px;
+}
+
+.location-picker-copy select {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 700 11px 'DM Sans', sans-serif;
+}
+
+.location-picker-copy select:focus-visible {
+  outline: 2px solid #9a7646;
+  outline-offset: 3px;
+}
+
+.location-current {
+  overflow: hidden;
+  color: #777a72;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location-picker-copy > small {
+  color: #96978f;
+  font-size: 8px;
+}
+
+.location-picker-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 5px;
+}
+
+.location-picker .location-map-open {
+  display: flex;
+  min-width: 62px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.location-picker .location-request {
+  flex-shrink: 0;
+  border-color: #b7a17b;
+  color: #6b542e;
+  min-width: 88px;
+  justify-content: center;
+}
+
+.location-error {
+  color: #a64f42 !important;
+  font-size: 9px !important;
+}
+
+@media (max-width: 900px) {
+  .location-picker {
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .location-picker {
+    gap: 7px;
+  }
+
+  .location-picker-copy > small:last-child {
+    display: none;
+  }
+
+  .location-picker .location-request {
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+
+  .location-picker .location-map-open {
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .location-picker {
+    max-width: 100%;
+  }
+
+  .location-picker .location-request {
+    padding-inline: 8px;
+  }
+}

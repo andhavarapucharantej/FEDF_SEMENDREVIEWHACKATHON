@@ -1,0 +1,41 @@
+.admin-module {
+  min-width: 0;
+}
+
+.admin-module .admin-panel,
+.admin-module .admin-table-wrap {
+  min-width: 0;
+}
+
+.admin-module :focus-visible {
+  outline: 2px solid #78917c;
+  outline-offset: 3px;
+}
+
+.admin-module .partner-main > .partner-review-note {
+  color: var(--muted);
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.admin-module .partner-rating small {
+  color: var(--muted);
+  font-size: 7px;
+}
+
+.admin-module .partner-demo-note {
+  margin: -4px 0 10px;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.admin-module .partner-contact-details {
+  display: grid;
+  gap: 3px;
+  color: var(--muted);
+  font-size: 8px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}

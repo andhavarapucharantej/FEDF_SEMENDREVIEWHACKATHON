@@ -1,0 +1,210 @@
+.delivery-contact {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #e6e1d6;
+  border-radius: 11px;
+  background: #fffefa;
+}
+
+.delivery-contact-head,
+.delivery-contact-details,
+.delivery-chat-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.delivery-contact-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: #eff2e9;
+  color: #426349;
+}
+
+.delivery-contact-head > div {
+  display: grid;
+  flex: 1;
+  gap: 3px;
+}
+
+.delivery-contact-head small,
+.delivery-chat-heading > span {
+  color: #938366;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+.delivery-contact-head b,
+.delivery-chat-heading b {
+  color: #303d31;
+  font-size: 11px;
+}
+
+.delivery-contact-status {
+  border-radius: 20px;
+  background: #eef2e9;
+  padding: 5px 8px;
+  color: #426349;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.delivery-contact-details {
+  justify-content: space-between;
+  border-block: 1px solid #efede6;
+  padding: 10px 0;
+}
+
+.delivery-contact-details > div {
+  display: grid;
+  gap: 4px;
+}
+
+.delivery-contact-details b {
+  color: #57594f;
+  font-size: 9px;
+}
+
+.delivery-contact-details span,
+.delivery-contact-note {
+  color: #96958c;
+  font-size: 8px;
+}
+
+.delivery-contact-details button,
+.delivery-status-request {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #e2dfd5;
+  border-radius: 7px;
+  background: #f7f5ef;
+  padding: 7px 9px;
+  color: #85857c;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.delivery-quick-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.delivery-quick-questions .delivery-status-request {
+  padding: 6px 8px;
+}
+
+
+
+.delivery-chat-heading {
+  color: #6a775f;
+}
+
+.delivery-chat-heading b {
+  flex: 1;
+}
+
+.delivery-chat-log {
+  display: grid;
+  gap: 6px;
+  max-height: 130px;
+  overflow: auto;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f7f6f1;
+}
+
+.delivery-chat-empty {
+  margin: 0;
+  color: #8b8b82;
+  font-size: 9px;
+}
+
+.delivery-chat-message {
+  max-width: 88%;
+  margin: 0;
+  border-radius: 9px;
+  padding: 7px 9px;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.delivery-chat-message.you {
+  justify-self: end;
+  background: #e8eee4;
+  color: #354c38;
+}
+
+.delivery-chat-message.partner {
+  justify-self: start;
+  background: #fffefa;
+  color: #69695f;
+}
+
+.delivery-chat-message.bot {
+  justify-self: start;
+  border: 1px solid #d8c59f;
+  background: #f5eedf;
+  color: #46351e;
+}
+
+.delivery-status-request {
+  justify-self: start;
+  border-color: #dce5d8;
+  background: #f3f6f0;
+  color: #426349;
+}
+
+.delivery-chat-form {
+  display: flex;
+  gap: 7px;
+}
+
+.delivery-chat-form input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid #e5e2d9;
+  border-radius: 7px;
+  background: #fff;
+  padding: 9px 10px;
+  color: #333;
+  font: inherit;
+  font-size: 10px;
+}
+
+.delivery-chat-form button {
+  display: grid;
+  width: 35px;
+  place-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: #315b43;
+  color: white;
+}
+
+.delivery-chat-form button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.delivery-contact-note {
+  margin: -4px 0 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}

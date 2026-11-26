@@ -1,0 +1,458 @@
+.payment-dialog {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: min(520px, 100%);
+  max-height: min(90vh, 820px);
+  overflow: hidden;
+  border: 1px solid #735735;
+  border-radius: 15px;
+  background: #302117;
+  color: #f0e5d2;
+  box-shadow: 0 24px 90px #0000009c;
+}
+
+.payment-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #59432c;
+  padding: 18px 20px 14px;
+}
+
+.payment-header small {
+  color: #d7b16e;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.payment-header h2 {
+  margin: 4px 0 2px;
+  color: #fff1d9;
+  font: 600 26px 'Cormorant Garamond', Georgia, serif;
+}
+
+.payment-header p {
+  margin: 0;
+  color: #c1ae92;
+  font-size: 9px;
+}
+
+.payment-scroll {
+  overflow-y: auto;
+  padding: 15px 20px;
+}
+
+.payment-scroll h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 9px;
+  color: #f1e4ce;
+  font-size: 11px;
+}
+
+.payment-methods {
+  display: grid;
+  gap: 7px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  border: 1px solid #60482f;
+  border-radius: 8px;
+  background: #39291c;
+  padding: 9px;
+  color: #eee0c8;
+  text-align: left;
+}
+
+.payment-method.selected {
+  border-color: #d7b16e;
+  background: #49341f;
+  box-shadow: inset 0 0 0 1px #d7b16e50;
+}
+
+.payment-method-icon,
+.offer-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 7px;
+  background: #4a3520;
+  color: #e3c17d;
+}
+
+.payment-method-copy {
+  display: grid;
+  flex: 1;
+  gap: 3px;
+}
+
+.payment-method-copy b,
+.available-offer b {
+  font-size: 10px;
+}
+
+.payment-method-copy small,
+.available-offer small {
+  color: #b7a58d;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.payment-method-check {
+  display: grid;
+  width: 19px;
+  height: 19px;
+  place-items: center;
+  border: 1px solid #84683e;
+  border-radius: 50%;
+  color: #f0d093;
+}
+
+.payment-demo-note {
+  margin: 8px 0 0;
+  border-left: 2px solid #d5ad68;
+  padding: 5px 8px;
+  color: #d6c5a9;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.upi-provider-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.upi-provider-picker button {
+  border: 1px solid #60482f;
+  border-radius: 7px;
+  background: #39291c;
+  padding: 7px 9px;
+  color: #decaa9;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.upi-provider-picker button.selected {
+  border-color: #d7b16e;
+  background: #49341f;
+  color: #f0d093;
+}
+
+.upi-provider-picker p {
+  flex-basis: 100%;
+  margin: 0;
+  color: #b7a58d;
+  font-size: 8px;
+}
+
+.qr-preview {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  border: 1px dashed #8a6a3d;
+  border-radius: 9px;
+  background: #39291c;
+  padding: 14px;
+  color: #e3c17d;
+  text-align: center;
+}
+
+.qr-preview b {
+  color: #f1e4ce;
+  font-size: 10px;
+}
+
+.qr-preview span {
+  max-width: 250px;
+  color: #c1ae92;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.qr-preview small {
+  border-radius: 20px;
+  background: #4a3520;
+  padding: 4px 7px;
+  color: #f0d093;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .6px;
+}
+
+.payment-offers,
+.payment-summary {
+  margin-top: 16px;
+  border-top: 1px solid #59432c;
+  padding-top: 13px;
+}
+
+.coupon-form {
+  display: flex;
+  gap: 7px;
+}
+
+.coupon-form input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid #60482f;
+  border-radius: 7px;
+  background: #241910;
+  padding: 9px 10px;
+  color: #f0e5d2;
+  font: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.coupon-form button,
+.available-offer button {
+  border: 1px solid #967344;
+  border-radius: 7px;
+  background: #49341f;
+  padding: 0 12px;
+  color: #f0d093;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.coupon-error,
+.coupon-applied {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 7px 0 0;
+  color: #f2a99c;
+  font-size: 9px;
+}
+
+.coupon-applied {
+  color: #cfe0b8;
+}
+
+.available-offers {
+  display: grid;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.available-offer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #58422b;
+  border-radius: 8px;
+  background: #35261a;
+  padding: 8px;
+}
+
+.available-offer > span:nth-child(2) {
+  display: grid;
+  flex: 1;
+  gap: 3px;
+}
+
+.available-offer button {
+  min-height: 27px;
+  padding-inline: 8px;
+}
+
+.payment-summary {
+  display: grid;
+  gap: 8px;
+}
+
+.payment-summary > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c9b89d;
+  font-size: 9px;
+}
+
+.payment-summary > div b {
+  color: #f1e5d1;
+}
+
+.payment-summary > .payment-discount,
+.payment-summary > .payment-discount b {
+  color: #cfe0b8;
+}
+
+.payment-summary > .payment-total {
+  border-top: 1px solid #59432c;
+  margin-top: 2px;
+  padding-top: 9px;
+  color: #fff0d6;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.payment-summary > .payment-total b {
+  color: #f0ce88;
+  font-size: 15px;
+}
+
+.payment-footer {
+  display: grid;
+  gap: 7px;
+  border-top: 1px solid #59432c;
+  background: #291d14;
+  padding: 12px 20px;
+}
+
+.payment-footer p {
+  margin: 0;
+  color: #b7a58d;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.payment-place-order {
+  min-height: 41px;
+  border: 1px solid #edc878;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e0bd79, #b78a45);
+  color: #24170d;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.payment-back {
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  gap: 5px;
+  border: 0;
+  background: transparent;
+  color: #d7c6a9;
+  font-size: 9px;
+}
+
+.theme-day .payment-dialog {
+  border-color: #dfd1b8;
+  background: #fffaf1;
+  color: #342619;
+}
+
+.theme-day .payment-header,
+.theme-day .payment-offers,
+.theme-day .payment-summary,
+.theme-day .payment-footer {
+  border-color: #e4d8c5;
+}
+
+.theme-day .payment-header h2,
+.theme-day .payment-scroll h3,
+.theme-day .payment-method-copy b,
+.theme-day .available-offer b {
+  color: #342619;
+}
+
+.theme-day .payment-header p,
+.theme-day .payment-method-copy small,
+.theme-day .available-offer small,
+.theme-day .payment-summary > div,
+.theme-day .payment-footer p {
+  color: #756650;
+}
+
+.theme-day .payment-method,
+.theme-day .available-offer {
+  border-color: #e2d5bf;
+  background: #f8f0e3;
+  color: #342619;
+}
+
+.theme-day .payment-method.selected {
+  border-color: #b18b4d;
+  background: #f0e2c9;
+}
+
+.theme-day .upi-provider-picker button {
+  border-color: #dfd1b8;
+  background: #f8f0e3;
+  color: #594321;
+}
+
+.theme-day .upi-provider-picker button.selected {
+  border-color: #b18b4d;
+  background: #f0e2c9;
+  color: #49351b;
+}
+
+.theme-day .upi-provider-picker p {
+  color: #756650;
+}
+
+.theme-day .qr-preview {
+  border-color: #bd985a;
+  background: #f8f0e3;
+  color: #795727;
+}
+
+.theme-day .qr-preview b {
+  color: #342619;
+}
+
+.theme-day .qr-preview span {
+  color: #756650;
+}
+
+.theme-day .qr-preview small {
+  background: #efe2c8;
+  color: #62471e;
+}
+
+.theme-day .payment-method-icon,
+.theme-day .offer-icon {
+  background: #efe2c8;
+  color: #795727;
+}
+
+.theme-day .coupon-form input {
+  border-color: #dfd1b8;
+  background: #fffdf8;
+  color: #342619;
+}
+
+.theme-day .coupon-form button,
+.theme-day .available-offer button {
+  border-color: #bd985a;
+  background: #f1e4ce;
+  color: #62471e;
+}
+
+.theme-day .payment-footer {
+  background: #f5ecde;
+}
+
+.theme-day .payment-back {
+  color: #604b2c;
+}
+
+@media (max-width: 520px) {
+  .payment-dialog {
+    max-height: 94vh;
+  }
+
+  .payment-header,
+  .payment-scroll {
+    padding-inline: 14px;
+  }
+
+  .payment-footer {
+    padding-inline: 14px;
+  }
+}

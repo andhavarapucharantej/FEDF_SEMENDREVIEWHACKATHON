@@ -1,0 +1,338 @@
+.order-telemetry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .9fr);
+  align-items: center;
+  gap: 20px;
+  min-height: 330px;
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid #634a30;
+  border-radius: 16px;
+  background:
+    radial-gradient(ellipse at 78% 52%, #85572735, transparent 37%),
+    linear-gradient(115deg, #26190f, #302116 58%, #1c130d);
+  padding: clamp(20px, 3vw, 36px);
+  color: #f3e5cd;
+  box-shadow: 0 20px 50px #110b0733;
+}
+
+.telemetry-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.telemetry-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e4bd75;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.telemetry-copy h2 {
+  margin: 12px 0 7px;
+  color: #fff3df;
+  font: 600 clamp(25px, 3vw, 36px)/1.08 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -.3px;
+}
+
+.telemetry-copy > p {
+  max-width: 470px;
+  margin: 0;
+  color: #d0bea2;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.telemetry-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.telemetry-track-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #edc878;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e0bd79, #b78a45);
+  padding: 10px 13px;
+  color: #24170d;
+  font-size: 10px;
+  font-weight: 800;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.telemetry-track-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.telemetry-demo-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #685137;
+  border-radius: 7px;
+  background: #39291b;
+  padding: 9px 10px;
+  color: #d8c6a9;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.telemetry-demo-tag i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d3ae6b;
+  box-shadow: 0 0 9px #d3ae6b88;
+}
+
+.telemetry-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 23px;
+  border-top: 1px solid #60482e;
+  padding-top: 13px;
+}
+
+.telemetry-stats > div {
+  display: grid;
+  min-width: 86px;
+  gap: 3px;
+  padding-right: 17px;
+}
+
+.telemetry-stats > div + div {
+  border-left: 1px solid #60482e;
+  padding-left: 17px;
+}
+
+.telemetry-stats small {
+  color: #b89a69;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+.telemetry-stats b {
+  color: #fff0d6;
+  font: 600 23px 'Cormorant Garamond', Georgia, serif;
+}
+
+.telemetry-scene {
+  position: relative;
+  display: grid;
+  min-height: 270px;
+  place-items: center;
+  perspective: 800px;
+}
+
+.telemetry-cube {
+  position: relative;
+  z-index: 1;
+  width: 156px;
+  height: 156px;
+  transform-style: preserve-3d;
+  cursor: grab;
+  touch-action: none;
+  transition: transform 220ms ease-out;
+  animation: cube-hover 4.8s ease-in-out infinite;
+}
+
+.telemetry-cube.is-dragging {
+  cursor: grabbing;
+  transition: none;
+  animation: none;
+}
+
+.telemetry-cube:focus-visible {
+  outline: 2px solid #edc878;
+  outline-offset: 22px;
+}
+
+.telemetry-face {
+  position: absolute;
+  display: flex;
+  width: 156px;
+  height: 156px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #f2d89d;
+  border-radius: 9px;
+  backface-visibility: hidden;
+  box-shadow: inset 0 0 30px #ffffff18;
+  text-align: center;
+}
+
+.telemetry-face b {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.telemetry-face small,
+.telemetry-face em {
+  color: #f4e3c2;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.telemetry-front {
+  transform: translateZ(78px);
+  background: linear-gradient(145deg, #bf403b, #9e2e2f);
+  color: #fff5e3;
+}
+
+.telemetry-back {
+  transform: rotateY(180deg) translateZ(78px);
+  background: linear-gradient(145deg, #fff4df, #d9c29a);
+  color: #43301a;
+}
+
+.telemetry-back small {
+  color: #756044;
+}
+
+.telemetry-right {
+  transform: rotateY(90deg) translateZ(78px);
+  background: linear-gradient(145deg, #d8b471, #9c7237);
+  color: #2d1f10;
+}
+
+.telemetry-right small {
+  color: #4a351b;
+}
+
+.telemetry-left {
+  transform: rotateY(-90deg) translateZ(78px);
+  background: linear-gradient(145deg, #f8edda, #c5aa7d);
+  color: #42301b;
+}
+
+.telemetry-left small {
+  color: #756044;
+}
+
+.telemetry-top {
+  transform: rotateX(90deg) translateZ(78px);
+  background: linear-gradient(145deg, #fff9eb, #d7bd8e);
+  color: #5b411f;
+}
+
+.telemetry-top span {
+  color: #a43733;
+  font: 700 30px 'Cormorant Garamond', Georgia, serif;
+}
+
+.telemetry-bottom {
+  transform: rotateX(-90deg) translateZ(78px);
+  background: linear-gradient(145deg, #4a3521, #2b1d12);
+  color: #f1d295;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .8px;
+}
+
+.cube-mark {
+  display: grid;
+  width: 41px;
+  height: 41px;
+  place-items: center;
+  border: 1px solid #f2d89d;
+  border-radius: 50%;
+  color: #ffe2a6;
+}
+
+.telemetry-front em {
+  margin-top: 5px;
+  border-radius: 20px;
+  background: #ffffff20;
+  padding: 4px 8px;
+}
+
+.telemetry-floor {
+  position: absolute;
+  bottom: 31px;
+  width: 200px;
+  height: 35px;
+  border-radius: 50%;
+  background: #d7a75226;
+  filter: blur(13px);
+}
+
+.telemetry-hint {
+  position: absolute;
+  bottom: 1px;
+  color: #b49b77;
+  font-size: 8px;
+}
+
+.theme-day .order-telemetry {
+  border-color: #ddc99e;
+  background:
+    radial-gradient(ellipse at 78% 52%, #e0c58c63, transparent 37%),
+    linear-gradient(115deg, #f5ead7, #efe1c9 58%, #f8f0e2);
+  color: #3a2917;
+  box-shadow: 0 20px 50px #49351b1c;
+}
+
+.theme-day .telemetry-copy h2,
+.theme-day .telemetry-stats b {
+  color: #372515;
+}
+
+.theme-day .telemetry-copy > p {
+  color: #6f5a3d;
+}
+
+.theme-day .telemetry-kicker,
+.theme-day .telemetry-stats small,
+.theme-day .telemetry-hint {
+  color: #785823;
+}
+
+.theme-day .telemetry-stats,
+.theme-day .telemetry-stats > div + div {
+  border-color: #d7c299;
+}
+
+.theme-day .telemetry-demo-tag {
+  border-color: #d6c39f;
+  background: #fff7e8;
+  color: #564226;
+}
+
+@keyframes cube-hover {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -7px;
+  }
+}
+
+@media (max-width: 760px) {
+  .order-telemetry {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .telemetry-scene {
+    min-height: 235px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .telemetry-cube {
+    animation: none;
+  }
+}

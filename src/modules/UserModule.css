@@ -1,0 +1,62 @@
+.user-module {
+  min-width: 0;
+}
+
+.user-module .restaurant-card:focus-within {
+  outline: 2px solid #78917c;
+  outline-offset: 3px;
+}
+
+.user-module .restaurant-info {
+  padding: 12px 10px 10px;
+  text-align: center;
+}
+
+.user-module .restaurant-title-row {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+}
+
+.user-module .restaurant-title-row h3 {
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.35;
+  text-overflow: clip;
+}
+
+.user-module .restaurant-description {
+  white-space: normal;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.user-module .restaurant-meta {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.user-module .hero-image {
+  animation: hero-slide-in 480ms ease both;
+}
+
+.user-module .hero-arrows button:first-child svg {
+  transform: rotate(180deg);
+}
+
+@keyframes hero-slide-in {
+  from {
+    opacity: .7;
+    transform: scale(1.015);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .user-module .hero-image {
+    animation: none;
+  }
+}

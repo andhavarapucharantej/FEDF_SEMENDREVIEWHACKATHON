@@ -1,0 +1,191 @@
+.food-mascots {
+  position: fixed;
+  z-index: 3;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.food-mascot {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  opacity: .9;
+}
+
+.mascot-left {
+  left: 248px;
+  bottom: 86px;
+  animation: mascot-float 4.8s ease-in-out infinite;
+}
+
+.mascot-right {
+  right: 12px;
+  top: 128px;
+  animation: mascot-float 5.3s ease-in-out -1.6s infinite;
+}
+
+.food-mascot-character {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid #d5b4729c;
+  border-radius: 50%;
+  background: #312216e8;
+  box-shadow: 0 7px 22px #110b0770, 0 0 18px #d5b47224;
+  font-size: 31px;
+  transform-origin: 50% 80%;
+  animation: mascot-wave 2.8s ease-in-out infinite;
+}
+
+.mascot-right .food-mascot-character {
+  animation-delay: -1.2s;
+}
+
+.food-mascot-bubble {
+  position: relative;
+  display: grid;
+  min-width: 108px;
+  min-height: 27px;
+  place-items: center;
+  border: 1px solid #d4b16f;
+  border-radius: 12px;
+  background: #39291beF;
+  padding: 6px 9px;
+  color: #f5e5c7;
+  box-shadow: 0 4px 14px #110b0745;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.food-mascot-bubble::before {
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 5px);
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #d4b16f;
+  border-left: 1px solid #d4b16f;
+  background: #39291b;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.food-mascot-bubble i {
+  grid-area: 1 / 1;
+  font-style: normal;
+  animation: mascot-speak 6s steps(1, end) infinite;
+}
+
+.food-mascot-bubble i + i {
+  animation-delay: -3s;
+}
+
+.mascot-right .food-mascot-bubble i {
+  animation-delay: -1.5s;
+}
+
+.mascot-right .food-mascot-bubble i + i {
+  animation-delay: -4.5s;
+}
+
+.theme-day .food-mascot-character {
+  border-color: #b89353;
+  background: #f7edda;
+  box-shadow: 0 7px 22px #59421f24, 0 0 18px #b58b4520;
+}
+
+.theme-day .food-mascot-bubble {
+  border-color: #bd985a;
+  background: #fff7e8ed;
+  color: #49351b;
+  box-shadow: 0 4px 14px #59421f20;
+}
+
+.theme-day .food-mascot-bubble::before {
+  border-color: #bd985a;
+  background: #fff7e8;
+}
+
+@keyframes mascot-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes mascot-wave {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.035);
+  }
+}
+
+@keyframes mascot-speak {
+  0%, 44% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50%, 94% {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .mascot-left {
+    left: 12px;
+    bottom: 76px;
+  }
+
+  .mascot-right {
+    right: 8px;
+    top: 118px;
+  }
+
+  .food-mascot-character {
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
+  }
+
+  .food-mascot-bubble {
+    min-width: 98px;
+    padding: 5px 7px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 440px) {
+  .food-mascot-character {
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+  }
+
+  .food-mascot-bubble {
+    min-width: 0;
+    max-width: 112px;
+    padding: 5px 6px;
+    font-size: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-mascot,
+  .food-mascot-character,
+  .food-mascot-bubble i {
+    animation: none;
+  }
+}

@@ -1,0 +1,1482 @@
+.luxury-theme.app-shell,
+.login-page.luxury-theme {
+  background:
+    radial-gradient(ellipse at 88% 2%, #ddcda84d 0, transparent 31%),
+    radial-gradient(ellipse at 10% 100%, #d8dfd04f 0, transparent 34%),
+    linear-gradient(135deg, #f7f3e9 0%, #f2efe5 50%, #e9e6d9 100%);
+}
+
+.luxury-theme .sidebar {
+  border-right-color: #e4d8c2;
+  background: linear-gradient(180deg, #f8f3e9 0%, #f2eee4 100%);
+  box-shadow: 5px 0 24px #4839210a;
+}
+
+.luxury-theme .brand-mark {
+  background: linear-gradient(145deg, #415d49, #263d30);
+  box-shadow: 0 5px 13px #253d3035;
+}
+
+.luxury-theme .topbar {
+  gap: 12px;
+  padding-inline: 3.5%;
+  border-bottom-color: #e7dece;
+  background: #f9f6eef2;
+  backdrop-filter: blur(14px);
+}
+
+.luxury-theme .welcome-row h1,
+.luxury-theme .admin-welcome h1,
+.luxury-theme .section-heading h2,
+.luxury-theme .login-heading h2,
+.luxury-theme .menu-intro h2,
+.luxury-theme .drawer-head h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.65px;
+}
+
+.luxury-theme .welcome-row h1 {
+  font-weight: 600;
+}
+
+.luxury-theme .hero-card {
+  border: 1px solid #d5c3a2;
+  box-shadow: 0 18px 42px #43341d20;
+  animation: luxury-rise 650ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+.luxury-theme .hero-shade {
+  background: linear-gradient(90deg, #18271fe8 0%, #28382bbe 38%, #493d2933 78%, #342b1e12);
+}
+
+.luxury-theme .hero-copy h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
+.luxury-theme .hero-copy h2 i {
+  color: #f2d9a8;
+}
+
+.luxury-theme .hero-cta {
+  box-shadow: 0 5px 16px #0f1b1433;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.luxury-theme .hero-cta:hover {
+  transform: translateY(-2px);
+  background: #fffaf0;
+}
+
+.luxury-theme .category-card,
+.luxury-theme .restaurant-card,
+.luxury-theme .my-order-card {
+  animation: luxury-rise 520ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+.luxury-theme .restaurant-card {
+  border-radius: 12px;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.luxury-theme .restaurant-card:hover {
+  transform: translateY(-4px);
+}
+
+.luxury-theme .restaurant-photo-wrap {
+  box-shadow: 0 7px 18px #3e34201a;
+}
+
+.luxury-theme .category-card {
+  border-color: #e6dece;
+  background: #fffdf8e8;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.luxury-theme .category-card:hover {
+  border-color: #c6ad7c;
+  box-shadow: 0 7px 20px #65533316;
+}
+
+.luxury-theme .login-card {
+  border: 1px solid #e8dfce;
+  border-radius: 18px;
+  background: #fffdf8d9;
+  padding: clamp(22px, 4vw, 34px);
+  box-shadow: 0 22px 70px #46371d18;
+  animation: luxury-rise 650ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+.luxury-theme .login-visual-copy h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+}
+
+.luxury-theme .login-visual-copy h1 em {
+  color: #f2d9a8;
+}
+
+.luxury-theme .login-submit,
+.luxury-theme .cart-btn,
+.luxury-theme .checkout-btn,
+.luxury-theme .my-order-track {
+  background: linear-gradient(135deg, #46664d, #263f31);
+  box-shadow: 0 5px 14px #253d3025;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.luxury-theme .login-submit:hover,
+.luxury-theme .cart-btn:hover,
+.luxury-theme .checkout-btn:hover,
+.luxury-theme .my-order-track:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px #253d3033;
+  filter: brightness(1.05);
+}
+
+.luxury-theme :focus-visible {
+  outline-color: #a5834e;
+}
+
+@keyframes luxury-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.luxury-theme .restaurant-card:nth-child(2),
+.luxury-theme .category-card:nth-child(2) {
+  animation-delay: 50ms;
+}
+
+.luxury-theme .restaurant-card:nth-child(3),
+.luxury-theme .category-card:nth-child(3) {
+  animation-delay: 100ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .luxury-theme *,
+  .luxury-theme *::before,
+  .luxury-theme *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .luxury-theme .top-actions {
+    gap: 6px;
+  }
+}
+
+.luxury-theme.app-shell,
+.login-page.luxury-theme {
+  --ink: #f0e5d2;
+  --muted: #b6a58d;
+  --green: #d7b16e;
+  --green-dark: #b8904e;
+  --line: #453628;
+  --cream: #140f0b;
+  color: #f0e5d2;
+  color-scheme: dark;
+  background:
+    radial-gradient(ellipse at 74% 2%, #50351b6b 0, transparent 31%),
+    radial-gradient(ellipse at 12% 65%, #35231670 0, transparent 38%),
+    linear-gradient(135deg, #100b07 0%, #17100b 48%, #0e0a07 100%);
+}
+
+.luxury-theme .sidebar {
+  border-right-color: #3b2d20;
+  background: linear-gradient(180deg, #18120d 0%, #120d09 100%);
+  box-shadow: 8px 0 30px #00000038;
+}
+
+.luxury-theme .brand-name,
+.luxury-theme .side-label,
+.luxury-theme .nav-item,
+.luxury-theme .profile-text b {
+  color: #e8dcc8;
+}
+
+.luxury-theme .brand-mark {
+  background: linear-gradient(145deg, #d6b16e, #8b6331);
+  color: #1b1209;
+  box-shadow: 0 5px 16px #b58b4540;
+}
+
+.luxury-theme .nav-item:hover,
+.luxury-theme .nav-item.active,
+.luxury-theme .nav-item.active-soft {
+  border-color: #604827;
+  background: #2a1e13;
+  color: #e3bd78;
+}
+
+.luxury-theme .nav-item i,
+.luxury-theme .avatar {
+  background: #49351e;
+  color: #f2d394;
+}
+
+.luxury-theme .side-note,
+.luxury-theme .profile {
+  border-color: #403122;
+  background: #1b140e;
+  color: #d8cbb7;
+}
+
+.luxury-theme .side-note p,
+.luxury-theme .profile-text small {
+  color: #ad9c84;
+}
+
+.luxury-theme .side-note a,
+.luxury-theme .side-note .note-icon {
+  color: #d6b16e;
+}
+
+.luxury-theme .topbar {
+  border-bottom-color: #3d3024;
+  background: #17110de8;
+  box-shadow: 0 8px 24px #0000001c;
+}
+
+.luxury-theme .main-area,
+.luxury-theme .page-content {
+  color: #f0e5d2;
+}
+
+.luxury-theme .location-picker,
+.luxury-theme .role-select-label,
+.luxury-theme .schedule-btn,
+.luxury-theme .search-box,
+.luxury-theme .filter-btn {
+  border-color: #493927;
+  background: #21180f;
+  color: #e4d5bd;
+}
+
+.luxury-theme .location-picker-copy select,
+.luxury-theme .role-select-label select,
+.luxury-theme .location-current,
+.luxury-theme .location-picker-copy > small {
+  color: #d4c3a9;
+}
+
+.luxury-theme .location-picker .location-request {
+  border-color: #9c7945;
+  background: #302214;
+  color: #e1be7a;
+}
+
+.luxury-theme .welcome-row h1,
+.luxury-theme .admin-welcome h1,
+.luxury-theme .section-heading h2,
+.luxury-theme .section-heading h1,
+.luxury-theme .admin-panel h2,
+.luxury-theme .menu-intro h2,
+.luxury-theme .drawer-head h2,
+.luxury-theme .account-page-heading h1,
+.luxury-theme .my-orders-header h1 {
+  color: #f0e4cf;
+}
+
+.luxury-theme .welcome-row p,
+.luxury-theme .admin-welcome p,
+.luxury-theme .weather-pill,
+.luxury-theme .restaurant-description,
+.luxury-theme .restaurant-meta,
+.luxury-theme .footer,
+.luxury-theme .account-page-heading p,
+.luxury-theme .my-orders-header p,
+.luxury-theme .my-order-info span {
+  color: #b5a58e;
+}
+
+.luxury-theme .eyebrow,
+.luxury-theme .section-kicker,
+.luxury-theme .category-count {
+  color: #c6a567;
+}
+
+.luxury-theme .hero-card {
+  border-color: #80633b;
+  box-shadow: 0 22px 65px #0000006b;
+}
+
+.luxury-theme .hero-shade {
+  background: linear-gradient(90deg, #140d08f2 0%, #1c120bc9 39%, #2b1c0c4d 74%, #100a0624 100%);
+}
+
+.luxury-theme .hero-kicker {
+  color: #e2c283;
+}
+
+.luxury-theme .hero-copy h2,
+.luxury-theme .hero-copy h2 i {
+  color: #fff3df;
+}
+
+.luxury-theme .hero-copy h2 i {
+  color: #e0bc78;
+}
+
+.luxury-theme .hero-copy p {
+  color: #e3d5c0;
+}
+
+.luxury-theme .hero-cta,
+.luxury-theme .login-submit,
+.luxury-theme .cart-btn,
+.luxury-theme .checkout-btn,
+.luxury-theme .my-order-track {
+  border-color: #d4ad67;
+  background: linear-gradient(135deg, #e0bd79, #b78a45);
+  color: #201509;
+  box-shadow: 0 6px 20px #00000045;
+}
+
+.luxury-theme .hero-cta:hover,
+.luxury-theme .login-submit:hover,
+.luxury-theme .cart-btn:hover,
+.luxury-theme .checkout-btn:hover,
+.luxury-theme .my-order-track:hover {
+  background: linear-gradient(135deg, #f0d39a, #c99f59);
+  color: #1b1209;
+}
+
+.luxury-theme .hero-arrows button,
+.luxury-theme .favorite-btn,
+.luxury-theme .favorite-round,
+.luxury-theme .close-btn {
+  border-color: #8d7046;
+  background: #21170fd9;
+  color: #e1bf7b;
+}
+
+.luxury-theme .category-card,
+.luxury-theme .restaurant-card,
+.luxury-theme .my-order-card,
+.luxury-theme .my-orders-empty,
+.luxury-theme .admin-panel,
+.luxury-theme .settings-card,
+.luxury-theme .account-card,
+.luxury-theme .delivery-contact,
+.luxury-theme .tracking-eta,
+.luxury-theme .schedule-modal,
+.luxury-theme .cart-panel {
+  border-color: #453526;
+  background: linear-gradient(145deg, #21180f, #19120d);
+  color: #eadcc6;
+  box-shadow: 0 16px 38px #00000030;
+}
+
+.luxury-theme .category-card {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease, background 200ms ease;
+}
+
+.luxury-theme .category-card:hover,
+.luxury-theme .category-card.selected,
+.luxury-theme .restaurant-card:hover {
+  border-color: #9b7745;
+  background-color: #2a1d12;
+  box-shadow: 0 12px 30px #00000040;
+}
+
+.luxury-theme .category-name,
+.luxury-theme .restaurant-title-row h3,
+.luxury-theme .restaurant-info h3,
+.luxury-theme .my-order-id,
+.luxury-theme .my-order-info b,
+.luxury-theme .my-order-card-bottom strong {
+  color: #f0e5d2;
+}
+
+.luxury-theme .restaurant-info {
+  color: #e4d6c1;
+}
+
+.luxury-theme .restaurant-meta,
+.luxury-theme .my-order-info {
+  border-color: #453628;
+}
+
+.luxury-theme .rating,
+.luxury-theme .partner-rating {
+  color: #e0bc78;
+}
+
+.luxury-theme .search-box input,
+.luxury-theme .admin-table select,
+.luxury-theme .sort-menu button,
+.luxury-theme .profile-form > input,
+.luxury-theme .delivery-chat-form input {
+  border-color: #4a3a29;
+  background: #17110c;
+  color: #f0e5d2;
+}
+
+.luxury-theme .sort-menu {
+  border-color: #493927;
+  background: #21180f;
+  box-shadow: 0 12px 35px #00000066;
+}
+
+.luxury-theme .sort-menu button {
+  background: transparent;
+}
+
+.luxury-theme .sort-menu button:hover,
+.luxury-theme .text-link,
+.luxury-theme .more-btn {
+  color: #e0bc78;
+}
+
+.luxury-theme .footer,
+.luxury-theme .admin-order-info,
+.luxury-theme .menu-item {
+  border-color: #443426;
+}
+
+.luxury-theme .restaurant-modal {
+  border: 1px solid #55412a;
+  background: #17110c;
+  color: #efdfc7;
+  box-shadow: 0 24px 90px #000000a6;
+}
+
+.luxury-theme .menu-content,
+.luxury-theme .menu-list {
+  background: #17110c;
+  color: #efdfc7;
+}
+
+.luxury-theme .menu-intro p,
+.luxury-theme .menu-item p,
+.luxury-theme .menu-note {
+  color: #b9a78e;
+}
+
+.luxury-theme .item-badge,
+.luxury-theme .menu-note {
+  border-color: #55432c;
+  background: #241a10;
+  color: #d5b472;
+}
+
+.luxury-theme .menu-item h3,
+.luxury-theme .menu-item-copy > b {
+  color: #f2e6d2;
+}
+
+.luxury-theme .modal-backdrop,
+.luxury-theme .backdrop {
+  background: #090603c9;
+  backdrop-filter: blur(7px);
+}
+
+.luxury-theme .schedule-options button,
+.luxury-theme .schedule-options button.chosen,
+.luxury-theme .cart-empty,
+.luxury-theme .basket-item,
+.luxury-theme .basket-footer,
+.luxury-theme .admin-table-wrap,
+.luxury-theme .partner-row,
+.luxury-theme .admin-order-row,
+.luxury-theme .delivery-chat-log {
+  border-color: #453628;
+  background: #1b140e;
+  color: #e9dcc7;
+}
+
+.luxury-theme .basket-item b,
+.luxury-theme .basket-item strong,
+.luxury-theme .subtotal-line,
+.luxury-theme .admin-table,
+.luxury-theme .admin-order-main b,
+.luxury-theme .partner-main b,
+.luxury-theme .drawer-head h2 {
+  color: #f0e5d2;
+}
+
+.luxury-theme .basket-item small,
+.luxury-theme .muted-line,
+.luxury-theme .checkout-note,
+.luxury-theme .cart-empty p,
+.luxury-theme .admin-order-main small,
+.luxury-theme .partner-main small {
+  color: #b3a18a;
+}
+
+.luxury-theme .qty-control button,
+.luxury-theme .admin-tabs button,
+.luxury-theme .availability-toggle {
+  border-color: #55432c;
+  background: #251a10;
+  color: #e3c17d;
+}
+
+.luxury-theme .admin-table th,
+.luxury-theme .admin-table td {
+  border-color: #453628;
+}
+
+.luxury-theme .empty-state,
+.luxury-theme .my-orders-empty {
+  border-color: #57432a;
+  color: #c3b39c;
+}
+
+.luxury-theme .empty-state h3,
+.luxury-theme .my-orders-empty h2 {
+  color: #f0e5d2;
+}
+
+.luxury-theme .tracking-map,
+.luxury-theme .delivery-contact {
+  border-color: #493827;
+  background: #1b140e;
+  color: #eadcc6;
+}
+
+.luxury-theme .tracking-map-heading b,
+.luxury-theme .tracking-eta-copy b,
+.luxury-theme .delivery-contact-head b,
+.luxury-theme .delivery-chat-heading b {
+  color: #f0e5d2;
+}
+
+.luxury-theme .tracking-map-provider,
+.luxury-theme .tracking-map-disclaimer,
+.luxury-theme .delivery-contact-details span,
+.luxury-theme .delivery-contact-note,
+.luxury-theme .delivery-chat-empty {
+  color: #b2a087;
+}
+
+.luxury-theme .tracking-eta-icon,
+.luxury-theme .delivery-contact-icon {
+  background: #342516;
+  color: #e0bd78;
+}
+
+.luxury-theme .tracking-eta-copy small,
+.luxury-theme .tracking-eta-percent,
+.luxury-theme .delivery-contact-head small,
+.luxury-theme .delivery-chat-heading > span {
+  color: #d2ae6d;
+}
+
+.luxury-theme .tracking-eta-bar,
+.luxury-theme .delivery-chat-log {
+  background: #110c08;
+}
+
+.luxury-theme .tracking-eta-bar i {
+  background: #d2aa62;
+}
+
+.luxury-theme .delivery-contact-details,
+.luxury-theme .delivery-contact-details b {
+  border-color: #463628;
+  color: #dfcfb7;
+}
+
+.luxury-theme .delivery-contact-status,
+.luxury-theme .delivery-chat-message.you {
+  background: #392918;
+  color: #ecd39e;
+}
+
+.luxury-theme .delivery-chat-message.partner {
+  background: #292016;
+  color: #e1d3bd;
+}
+
+.luxury-theme .delivery-chat-message.bot {
+  border-color: #765a35;
+  background: #3a2a1c;
+  color: #f0dfc2;
+}
+
+.luxury-theme .delivery-contact-details button,
+.luxury-theme .delivery-status-request,
+.luxury-theme .tracking-map-footer button {
+  border-color: #735a36;
+  background: #2a1d11;
+  color: #e1bf7b;
+}
+
+.luxury-theme .tracking-map-empty {
+  border-color: #6a5336;
+  background: #1a130df0;
+  color: #eee0ca;
+}
+
+.luxury-theme .tracking-map-empty b,
+.luxury-theme .tracking-map-empty span {
+  color: #e5d3b6;
+}
+
+.luxury-theme .account-page-heading h1,
+.luxury-theme .settings-card h2,
+.luxury-theme .profile-form > label,
+.luxury-theme .setting-row b {
+  color: #f0e5d2;
+}
+
+.luxury-theme .account-page-heading p,
+.luxury-theme .setting-row small,
+.luxury-theme .location-settings p,
+.luxury-theme .location-settings > small,
+.luxury-theme .account-demo-note {
+  color: #b3a28b;
+}
+
+.luxury-theme .profile-form > input {
+  border-color: #4b3b2b;
+  background: #17110c;
+  color: #f0e5d2;
+}
+
+.luxury-theme .setting-row,
+.luxury-theme .account-card {
+  border-color: #453628;
+}
+
+.luxury-theme .setting-row {
+  border-top-color: #453628;
+}
+
+.luxury-theme .account-avatar {
+  background: #342516;
+  color: #e2bd78;
+}
+
+.luxury-theme .account-actions .account-signout,
+.luxury-theme .location-settings button {
+  border-color: #644d30;
+  background: #241a10;
+  color: #e1bf7b;
+}
+
+.luxury-theme .login-module .login-panel {
+  background:
+    radial-gradient(ellipse at 100% 0%, #6947223d, transparent 46%),
+    linear-gradient(155deg, #1a130d, #100b07);
+}
+
+.luxury-theme .login-card {
+  border-color: #57432b;
+  background: #1c150ff2;
+  box-shadow: 0 22px 70px #00000070;
+}
+
+.luxury-theme .login-heading h2,
+.luxury-theme .login-role-tabs b,
+.luxury-theme .login-form > label,
+.luxury-theme .login-auto-location {
+  color: #f0e5d2;
+}
+
+.luxury-theme .login-heading p,
+.luxury-theme .login-role-tabs small,
+.luxury-theme .login-demo,
+.luxury-theme .login-auto-location small {
+  color: #b4a38c;
+}
+
+.luxury-theme .login-role-tabs button,
+.luxury-theme .login-input,
+.luxury-theme .register-otp > input {
+  border-color: #4b3a28;
+  background: #140e09;
+  color: #e9d9c0;
+}
+
+.luxury-theme .login-role-tabs button.active {
+  border-color: #a27b42;
+  background: #2a1e12;
+  box-shadow: inset 0 0 0 1px #8e6e3e;
+}
+
+.luxury-theme .login-input input,
+.luxury-theme .register-otp > input {
+  color: #f0e5d2;
+}
+
+.luxury-theme .register-otp {
+  border-color: #6c5230;
+  background: #24190f;
+}
+
+.luxury-theme .register-otp > b,
+.luxury-theme .login-mode-switch {
+  color: #e0bc78;
+}
+
+.luxury-theme .register-otp > span,
+.luxury-theme .register-otp > label {
+  color: #c3b094;
+}
+
+.luxury-theme .login-submit,
+.luxury-theme .account-actions button:not(.account-signout) {
+  background: linear-gradient(135deg, #dfbc78, #ae8140);
+  color: #201509;
+}
+
+.luxury-theme .login-demo {
+  line-height: 1.6;
+}
+
+.luxury-theme :focus-visible {
+  outline-color: #e0bc78;
+}
+
+.luxury-theme h1,
+.luxury-theme h2,
+.luxury-theme .section-heading h2,
+.luxury-theme .brand-name,
+.luxury-theme .drawer-head h2,
+.luxury-theme .my-orders-header h1,
+.luxury-theme .account-page-heading h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.luxury-theme .section-kicker,
+.luxury-theme .eyebrow,
+.luxury-theme .hero-kicker {
+  letter-spacing: 0.13em;
+}
+
+.luxury-theme .profile-form,
+.luxury-theme .settings-card,
+.luxury-theme .my-order-card,
+.luxury-theme .restaurant-card,
+.luxury-theme .category-card {
+  animation: velvet-arrive 720ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.luxury-theme .restaurant-card:nth-child(2),
+.luxury-theme .category-card:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+.luxury-theme .restaurant-card:nth-child(3),
+.luxury-theme .category-card:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+.luxury-theme .restaurant-card:nth-child(4),
+.luxury-theme .category-card:nth-child(4) {
+  animation-delay: 210ms;
+}
+
+.luxury-theme .restaurant-card:nth-child(5),
+.luxury-theme .category-card:nth-child(5) {
+  animation-delay: 280ms;
+}
+
+.luxury-theme .restaurant-card:nth-child(6),
+.luxury-theme .category-card:nth-child(6) {
+  animation-delay: 350ms;
+}
+
+.luxury-theme .hero-card {
+  animation: hero-reveal 900ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.luxury-theme .profile .avatar,
+.luxury-theme .account-avatar {
+  box-shadow: 0 0 0 4px #d5b47218, 0 0 22px #d5b47220;
+}
+
+.luxury-theme .restaurant-card:hover,
+.luxury-theme .category-card:hover,
+.luxury-theme .nav-item:hover {
+  transition: transform 260ms cubic-bezier(.2, .8, .2, 1), border-color 260ms ease, box-shadow 260ms ease, color 260ms ease;
+}
+
+@keyframes velvet-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .luxury-theme .profile-form,
+  .luxury-theme .settings-card,
+  .luxury-theme .my-order-card,
+  .luxury-theme .restaurant-card,
+  .luxury-theme .category-card,
+  .luxury-theme .hero-card {
+    animation: none;
+  }
+}
+
+.theme-day.app-shell,
+.theme-day.login-page {
+  --ink: #2b2117;
+  --muted: #736552;
+  --green: #825d2b;
+  --green-dark: #65451f;
+  --line: #e5d8c2;
+  --cream: #faf6ed;
+  color: #2b2117;
+  color-scheme: light;
+  background:
+    radial-gradient(ellipse at 82% 0%, #e6d3ad 0, transparent 34%),
+    radial-gradient(ellipse at 11% 85%, #e1e4d3 0, transparent 36%),
+    linear-gradient(135deg, #f8f3e8 0%, #f1e8d7 55%, #eee9dc 100%);
+}
+
+.theme-day .sidebar {
+  border-right-color: #dfd1b8;
+  background: linear-gradient(180deg, #f8f1e4, #eee5d5);
+  box-shadow: 5px 0 24px #4839210b;
+}
+
+.theme-day .brand-name,
+.theme-day .side-label,
+.theme-day .nav-item,
+.theme-day .profile-text b {
+  color: #38291a;
+}
+
+.theme-day .nav-item:hover,
+.theme-day .nav-item.active,
+.theme-day .nav-item.active-soft {
+  border-color: #d3b77f;
+  background: #e9dcc2;
+  color: #64451f;
+}
+
+.theme-day .nav-item i,
+.theme-day .avatar,
+.theme-day .side-note .note-icon {
+  background: #ead9b6;
+  color: #69491f;
+}
+
+.theme-day .side-note,
+.theme-day .profile {
+  border-color: #dfd1b8;
+  background: #f7f0e2;
+  color: #4a3925;
+}
+
+.theme-day .side-note p,
+.theme-day .profile-text small {
+  color: #796a54;
+}
+
+.theme-day .side-note a {
+  color: #765523;
+}
+
+.theme-day .topbar {
+  border-bottom-color: #dfd1b8;
+  background: #f8f2e7ed;
+}
+
+.theme-day .main-area,
+.theme-day .page-content {
+  color: #2b2117;
+}
+
+.theme-day .location-picker,
+.theme-day .role-select-label,
+.theme-day .schedule-btn,
+.theme-day .search-box,
+.theme-day .filter-btn {
+  border-color: #dfd1b8;
+  background: #fffaf1;
+  color: #483720;
+}
+
+.theme-day .location-picker-copy select,
+.theme-day .role-select-label select,
+.theme-day .location-current,
+.theme-day .location-picker-copy > small {
+  color: #5e503c;
+}
+
+.theme-day .location-picker .location-request {
+  border-color: #b99559;
+  background: #f0e3c9;
+  color: #59401e;
+}
+
+.theme-day .welcome-row h1,
+.theme-day .admin-welcome h1,
+.theme-day .section-heading h2,
+.theme-day .admin-panel h2,
+.theme-day .menu-intro h2,
+.theme-day .drawer-head h2,
+.theme-day .account-page-heading h1,
+.theme-day .my-orders-header h1 {
+  color: #302316;
+}
+
+.theme-day .welcome-row p,
+.theme-day .admin-welcome p,
+.theme-day .weather-pill,
+.theme-day .restaurant-description,
+.theme-day .restaurant-meta,
+.theme-day .footer,
+.theme-day .account-page-heading p,
+.theme-day .my-orders-header p,
+.theme-day .my-order-info span {
+  color: #756650;
+}
+
+.theme-day .eyebrow,
+.theme-day .section-kicker,
+.theme-day .category-count {
+  color: #80602d;
+}
+
+.theme-day .category-card,
+.theme-day .restaurant-card,
+.theme-day .my-order-card,
+.theme-day .my-orders-empty,
+.theme-day .admin-panel,
+.theme-day .settings-card,
+.theme-day .account-card,
+.theme-day .delivery-contact,
+.theme-day .tracking-eta,
+.theme-day .schedule-modal,
+.theme-day .cart-panel {
+  border-color: #e0d2bb;
+  background: linear-gradient(145deg, #fffaf1, #f5eddf);
+  color: #302519;
+  box-shadow: 0 12px 32px #46351e13;
+}
+
+.theme-day .category-name,
+.theme-day .restaurant-title-row h3,
+.theme-day .restaurant-info h3,
+.theme-day .my-order-id,
+.theme-day .my-order-info b,
+.theme-day .my-order-card-bottom strong {
+  color: #342619;
+}
+
+.theme-day .restaurant-meta,
+.theme-day .my-order-info,
+.theme-day .footer,
+.theme-day .admin-order-info,
+.theme-day .menu-item {
+  border-color: #e2d6c3;
+}
+
+.theme-day .rating,
+.theme-day .partner-rating,
+.theme-day .text-link,
+.theme-day .more-btn {
+  color: #80602d;
+}
+
+.theme-day .search-box input,
+.theme-day .admin-table select,
+.theme-day .sort-menu button,
+.theme-day .profile-form > input,
+.theme-day .delivery-chat-form input {
+  border-color: #dfd3c0;
+  background: #fffdf8;
+  color: #302519;
+}
+
+.theme-day .sort-menu {
+  border-color: #dfd1b8;
+  background: #fffaf1;
+  box-shadow: 0 12px 35px #49351b24;
+}
+
+.theme-day .restaurant-modal,
+.theme-day .menu-content,
+.theme-day .menu-list {
+  border-color: #dfd1b8;
+  background: #fffaf1;
+  color: #302519;
+}
+
+.theme-day .menu-intro p,
+.theme-day .menu-item p,
+.theme-day .menu-note {
+  color: #756650;
+}
+
+.theme-day .item-badge,
+.theme-day .menu-note {
+  border-color: #e0d2bb;
+  background: #f3ead9;
+  color: #725326;
+}
+
+.theme-day .menu-item h3,
+.theme-day .menu-item-copy > b {
+  color: #342619;
+}
+
+.theme-day .modal-backdrop,
+.theme-day .backdrop {
+  background: #1b1209a8;
+}
+
+.theme-day .schedule-options button,
+.theme-day .cart-empty,
+.theme-day .basket-item,
+.theme-day .basket-footer,
+.theme-day .admin-table-wrap,
+.theme-day .partner-row,
+.theme-day .admin-order-row {
+  border-color: #e1d4c0;
+  background: #fffaf1;
+  color: #302519;
+}
+
+.theme-day .basket-item b,
+.theme-day .basket-item strong,
+.theme-day .subtotal-line,
+.theme-day .admin-table,
+.theme-day .admin-order-main b,
+.theme-day .partner-main b {
+  color: #342619;
+}
+
+.theme-day .basket-item small,
+.theme-day .muted-line,
+.theme-day .checkout-note,
+.theme-day .cart-empty p,
+.theme-day .admin-order-main small,
+.theme-day .partner-main small {
+  color: #756650;
+}
+
+.theme-day .qty-control button,
+.theme-day .admin-tabs button,
+.theme-day .availability-toggle {
+  border-color: #dfd1b8;
+  background: #f1e7d6;
+  color: #654b25;
+}
+
+.theme-day .admin-table th,
+.theme-day .admin-table td {
+  border-color: #e2d6c3;
+}
+
+.theme-day .empty-state,
+.theme-day .my-orders-empty {
+  border-color: #cfb987;
+  color: #6a5a43;
+}
+
+.theme-day .empty-state h3,
+.theme-day .my-orders-empty h2 {
+  color: #302519;
+}
+
+.theme-day .tracking-map,
+.theme-day .delivery-contact {
+  border-color: #dfd1b8;
+  background: #fffaf1;
+  color: #302519;
+}
+
+.theme-day .tracking-map-heading b,
+.theme-day .tracking-eta-copy b,
+.theme-day .delivery-contact-head b,
+.theme-day .delivery-chat-heading b {
+  color: #342619;
+}
+
+.theme-day .tracking-map-provider,
+.theme-day .tracking-map-disclaimer,
+.theme-day .delivery-contact-details span,
+.theme-day .delivery-contact-note,
+.theme-day .delivery-chat-empty {
+  color: #756650;
+}
+
+.theme-day .tracking-eta-icon,
+.theme-day .delivery-contact-icon {
+  background: #f0e4cc;
+  color: #78572a;
+}
+
+.theme-day .tracking-eta-copy small,
+.theme-day .tracking-eta-percent,
+.theme-day .delivery-contact-head small,
+.theme-day .delivery-chat-heading > span {
+  color: #80602d;
+}
+
+.theme-day .tracking-eta-bar,
+.theme-day .delivery-chat-log {
+  background: #eee5d6;
+}
+
+.theme-day .tracking-eta-bar i {
+  background: #a77c37;
+}
+
+.theme-day .delivery-contact-details {
+  border-color: #e2d6c3;
+}
+
+.theme-day .delivery-contact-details b {
+  color: #594834;
+}
+
+.theme-day .delivery-contact-status,
+.theme-day .delivery-chat-message.you {
+  background: #eee2cb;
+  color: #49361c;
+}
+
+.theme-day .delivery-chat-message.partner {
+  background: #fffaf1;
+  color: #594834;
+}
+
+.theme-day .delivery-chat-message.bot {
+  border-color: #d7c49f;
+  background: #f5eedf;
+  color: #46351e;
+}
+
+.theme-day .delivery-contact-details button,
+.theme-day .delivery-status-request,
+.theme-day .tracking-map-footer button {
+  border-color: #cfb987;
+  background: #f2e8d7;
+  color: #61451c;
+}
+
+.theme-day .tracking-map-empty {
+  border-color: #dfd1b8;
+  background: #fffaf1ed;
+  color: #302519;
+}
+
+.theme-day .tracking-map-empty b,
+.theme-day .tracking-map-empty span {
+  color: #493a26;
+}
+
+.theme-day .account-page-heading h1,
+.theme-day .settings-card h2,
+.theme-day .profile-form > label,
+.theme-day .setting-row b {
+  color: #342619;
+}
+
+.theme-day .account-page-heading p,
+.theme-day .setting-row small,
+.theme-day .location-settings p,
+.theme-day .location-settings > small,
+.theme-day .account-demo-note {
+  color: #756650;
+}
+
+.theme-day .account-avatar {
+  background: #f0e4cc;
+  color: #78572a;
+}
+
+.theme-day .setting-row,
+.theme-day .account-card {
+  border-color: #e2d6c3;
+}
+
+.theme-day .setting-row {
+  border-top-color: #e2d6c3;
+}
+
+.theme-day .account-actions .account-signout,
+.theme-day .location-settings button,
+.theme-day .theme-options button {
+  border-color: #dfd1b8;
+  background: #f5ecdc;
+  color: #594321;
+}
+
+.theme-day .theme-options button.selected {
+  border-color: #a5824e;
+  background: #e8d5b2;
+  color: #342619;
+}
+
+.theme-day .login-module .login-panel {
+  background: linear-gradient(150deg, #f8f1e4, #eee4d3);
+}
+
+.theme-day .login-card {
+  border-color: #dfd1b8;
+  background: #fffaf1f2;
+  box-shadow: 0 22px 70px #49351b1c;
+}
+
+.theme-day .login-heading h2,
+.theme-day .login-role-tabs b,
+.theme-day .login-form > label,
+.theme-day .login-auto-location {
+  color: #342619;
+}
+
+.theme-day .login-heading p,
+.theme-day .login-role-tabs small,
+.theme-day .login-demo,
+.theme-day .login-auto-location small {
+  color: #756650;
+}
+
+.theme-day .login-role-tabs button,
+.theme-day .login-input,
+.theme-day .register-otp > input {
+  border-color: #dfd1b8;
+  background: #fffdf8;
+  color: #342619;
+}
+
+.theme-day .login-role-tabs button.active {
+  border-color: #b39258;
+  background: #f1e5ce;
+  box-shadow: inset 0 0 0 1px #b39258;
+}
+
+.theme-day .login-input input,
+.theme-day .register-otp > input {
+  color: #342619;
+}
+
+.theme-day .register-otp {
+  border-color: #d7c49f;
+  background: #f4ead8;
+}
+
+.theme-day .register-otp > b,
+.theme-day .login-mode-switch {
+  color: #6a4b20;
+}
+
+.theme-day .register-otp > span,
+.theme-day .register-otp > label {
+  color: #756650;
+}
+
+.theme-day .login-submit,
+.theme-day .account-actions button:not(.account-signout) {
+  background: linear-gradient(135deg, #dfbc78, #ae8140);
+  color: #201509;
+}
+
+.luxury-theme select option {
+  background-color: #21180f;
+  color: #f0e5d2;
+}
+
+.theme-day select option {
+  background-color: #fffaf1;
+  color: #342619;
+}
+
+.luxury-theme .login-input:focus-within,
+.luxury-theme .search-box:focus-within {
+  border-color: #b7ad9b;
+  box-shadow: 0 0 0 2px #b7ad9b2b;
+}
+
+.theme-day .login-input:focus-within,
+.theme-day .search-box:focus-within {
+  border-color: #81735f;
+  box-shadow: 0 0 0 2px #81735f24;
+}
+
+.theme-night .login-success {
+  background: #30402b;
+  color: #d7e6c6;
+}
+
+.theme-day .login-success {
+  background: #e8eee4;
+  color: #355a39;
+}
+
+.theme-night.app-shell,
+.theme-night.login-page {
+  background:
+    radial-gradient(ellipse at 74% 2%, #76502c50 0, transparent 34%),
+    radial-gradient(ellipse at 10% 70%, #573a2459 0, transparent 40%),
+    linear-gradient(135deg, #24170f 0%, #302117 48%, #21160f 100%);
+}
+
+.theme-night .sidebar {
+  background: linear-gradient(180deg, #302116, #25180f);
+  border-right-color: #59412a;
+}
+
+.theme-night .topbar {
+  background: #332419e8;
+  border-bottom-color: #5b442c;
+}
+
+.theme-night .location-picker,
+.theme-night .role-select-label,
+.theme-night .schedule-btn,
+.theme-night .search-box,
+.theme-night .filter-btn {
+  background: #3a291c;
+  border-color: #674d30;
+}
+
+.theme-night .category-card,
+.theme-night .restaurant-card,
+.theme-night .my-order-card,
+.theme-night .my-orders-empty,
+.theme-night .admin-panel,
+.theme-night .settings-card,
+.theme-night .account-card,
+.theme-night .delivery-contact,
+.theme-night .tracking-eta,
+.theme-night .schedule-modal,
+.theme-night .cart-panel {
+  background: linear-gradient(145deg, #3b2a1d, #302217);
+  border-color: #62492f;
+}
+
+.theme-night .sort-menu,
+.theme-night .sort-menu button,
+.theme-night .search-box input,
+.theme-night .admin-table select,
+.theme-night .profile-form > input,
+.theme-night .delivery-chat-form input,
+.theme-night .login-input,
+.theme-night .login-role-tabs button,
+.theme-night .register-otp > input {
+  background-color: #2a1d14;
+  border-color: #63492e;
+}
+
+.theme-night .restaurant-modal,
+.theme-night .menu-content,
+.theme-night .menu-list {
+  background: #2b1e15;
+}
+
+.theme-night .schedule-options button,
+.theme-night .cart-empty,
+.theme-night .basket-item,
+.theme-night .basket-footer,
+.theme-night .admin-table-wrap,
+.theme-night .partner-row,
+.theme-night .admin-order-row,
+.theme-night .delivery-chat-log {
+  background: #35261a;
+  border-color: #59422c;
+}
+
+.theme-night .tracking-map {
+  background: #332419;
+  border-color: #634a30;
+}
+
+.theme-night .tracking-map-empty {
+  background: #35261aef;
+}
+
+.theme-night .account-actions .account-signout,
+.theme-night .location-settings button,
+.theme-night .delivery-contact-details button,
+.theme-night .delivery-status-request,
+.theme-night .tracking-map-footer button {
+  background: #3c2b1c;
+  border-color: #765a35;
+}
+
+.theme-night .login-module .login-panel {
+  background: linear-gradient(150deg, #35261a, #26190f);
+}
+
+.theme-night .login-card {
+  background: #3a291df2;
+  border-color: #674d31;
+}
+
+.theme-night .register-otp {
+  background: #342419;
+  border-color: #765a35;
+}
+
+.luxury-theme .theme-toggle {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #765a35;
+  border-radius: 8px;
+  background: #3a291c;
+  padding: 0 10px;
+  color: #f0d093;
+  font-size: 10px;
+  font-weight: 700;
+  transition: background 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+
+.luxury-theme .theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: #d3ae6b;
+  background: #4a3421;
+}
+
+.theme-day .theme-toggle {
+  border-color: #c9ad78;
+  background: #f2e5ce;
+  color: #62471e;
+}
+
+.theme-day .theme-toggle:hover {
+  background: #ead9b7;
+}
+
+@media (max-width: 1150px) {
+  .luxury-theme .theme-toggle {
+    width: 34px;
+    padding: 0;
+  }
+
+  .luxury-theme .theme-toggle span {
+    display: none;
+  }
+}

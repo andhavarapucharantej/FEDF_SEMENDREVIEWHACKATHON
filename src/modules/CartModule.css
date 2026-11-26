@@ -1,0 +1,27 @@
+.cart-module {
+  border-left: 1px solid #e8e4da;
+}
+
+.cart-module :focus-visible {
+  outline: 2px solid #78917c;
+  outline-offset: 3px;
+}
+
+.cart-module .basket-item > img {
+  object-fit: cover;
+}
+
+.cart-module .basket-unavailable,
+.cart-module .basket-unavailable-note {
+  color: #b94d42;
+  font-size: 10px;
+}
+
+.cart-module .basket-unavailable-note {
+  margin: 8px 0 0;
+}
+
+.cart-module .checkout-btn:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
